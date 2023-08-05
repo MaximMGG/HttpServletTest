@@ -1,4 +1,4 @@
-package com.maxim.http.socket.client;
+package com.maxim.http.client;
 
 import java.io.File;
 import java.io.IOException;
