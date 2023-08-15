@@ -1,7 +1,8 @@
 package com.httpservlet.test.httpservlets.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
 import jakarta.servlet.ServletConfig;
@@ -27,11 +28,13 @@ public class DownloadServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setHeader("Content-Disposition", "attachment; filename=\"filename.txt\"");
-        resp.setContentType("text/plane");
+        resp.setContentType("application/json");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
-
-        try (PrintWriter writer = resp.getWriter()) {
-            writer.write("Data from servlet!");
+        
+        
+        try (OutputStream os = resp.getOutputStream();
+            InputStream resourceAsStream = DownloadServlet.class.getClassLoader().getResourceAsStream("first.json")) {
+            os.write(resourceAsStream.readAllBytes());
         }
     }
 }
