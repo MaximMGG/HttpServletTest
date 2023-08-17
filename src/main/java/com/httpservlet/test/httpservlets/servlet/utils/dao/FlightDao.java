@@ -4,11 +4,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import com.httpservlet.test.httpservlets.servlet.entity.Flight;
+import com.httpservlet.test.httpservlets.servlet.entity.FlightStatus;
 import com.httpservlet.test.httpservlets.servlet.utils.ConnectionManager;
 
 
@@ -31,10 +33,20 @@ public class FlightDao implements Dao<Long, Flight> {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return null;
     }
 
-    private Flight buildFlight(ResultSet res) {
-
+    private Flight buildFlight(ResultSet res) throws SQLException {
+        return new Flight(
+            res.getObject("id", Long.class),
+            res.getObject("flight_no", String.class),
+            res.getObject("departure_date",Timestamp.class).toLocalDateTime(),
+            res.getObject("departure_airport_code", String.class),
+            res.getObject("arrival_date", Timestamp.class).toLocalDateTime(),
+            res.getObject("arrival_airport_code", String.class),
+            res.getObject("aircraft_id", Long.class),
+            FlightStatus.valueOf(res.getObject("status", String.class))
+        );
     }
 
     @Override

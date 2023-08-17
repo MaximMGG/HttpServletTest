@@ -10,11 +10,11 @@ public class Flight {
     private String departureAirportCode;
     private LocalDateTime arrivalDate;
     private String arrivalAirportCode;
-    private Integer aircraftId;
+    private Long aircraftId;
     private FlightStatus status;
 
     public Flight(Long id, String flightNo, LocalDateTime departureDate, String departureAirportCode,
-            LocalDateTime arrivalDate, String arrivalAirportCode, Integer aircraftId, FlightStatus status) {
+            LocalDateTime arrivalDate, String arrivalAirportCode, Long aircraftId, FlightStatus status) {
         this.id = id;
         this.flightNo = flightNo;
         this.departureDate = departureDate;
@@ -73,11 +73,11 @@ public class Flight {
         this.arrivalAirportCode = arrivalAirportCode;
     }
 
-    public Integer getAircraftId() {
+    public Long getAircraftId() {
         return aircraftId;
     }
 
-    public void setAircraftId(Integer aircraftId) {
+    public void setAircraftId(Long aircraftId) {
         this.aircraftId = aircraftId;
     }
 
