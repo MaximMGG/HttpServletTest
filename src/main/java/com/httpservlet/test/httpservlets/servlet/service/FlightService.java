@@ -13,11 +13,6 @@ public class FlightService {
 
     private FlightService() {}
 
-    public static void main(String[] args) {
-        System.out.println(INSTANCE.findAll());
-    }
-
-
     public List<FlightDto> findAll(){
         return flightDao.findAll().stream()
                                     .map(x -> new FlightDto(

@@ -32,10 +32,10 @@ public class FlightDao implements Dao<Long, Flight> {
             while (res.next()) {
                 flights.add(buildFlight(res));
             }
+            return flights;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return null;
     }
 
     private FlightDao() {}

@@ -1,0 +1,13 @@
+com\httpservlet\test\httpservlets\servlet\servlet\Web.class
+com\httpservlet\test\httpservlets\servlet\utils\dao\Dao.class
+com\httpservlet\test\httpservlets\servlet\dto\FlightDto.class
+com\httpservlet\test\httpservlets\servlet\FirstServlet.class
+com\httpservlet\test\httpservlets\servlet\servlet\FlightServlet.class
+com\httpservlet\test\httpservlets\servlet\utils\PropertiesUtil.class
+com\httpservlet\test\httpservlets\servlet\Run.class
+com\httpservlet\test\httpservlets\servlet\entity\FlightStatus.class
+com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.class
+com\httpservlet\test\httpservlets\servlet\DownloadServlet.class
+com\httpservlet\test\httpservlets\servlet\service\FlightService.class
+com\httpservlet\test\httpservlets\servlet\entity\Flight.class
+com\httpservlet\test\httpservlets\servlet\utils\dao\FlightDao.class

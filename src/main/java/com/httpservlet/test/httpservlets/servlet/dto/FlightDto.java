@@ -2,6 +2,10 @@ package com.httpservlet.test.httpservlets.servlet.dto;
 
 public class FlightDto {
     
+    @Override
+    public String toString() {
+        return "FlightDto [id=" + id + ", description=" + description + "]";
+    }
     private Long id;
     private String description;
 
