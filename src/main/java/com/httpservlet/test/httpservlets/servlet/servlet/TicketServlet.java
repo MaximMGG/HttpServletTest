@@ -27,7 +27,7 @@ public class TicketServlet extends HttpServlet{
         try (PrintWriter pw = resp.getWriter()) {
             pw.write("<h1>bought tickets</h1>");
             pw.write("<ul>");
-            ticketService.findAllByFlightId(flightId).forEach(ticketDto -> 
+            ticketService.findAllByFlightId(flightId).forEach(ticketDto ->
             pw.write("""
                    <li>
                         %s

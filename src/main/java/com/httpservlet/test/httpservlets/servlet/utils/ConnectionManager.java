@@ -2,8 +2,11 @@ package com.httpservlet.test.httpservlets.servlet.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
+import lombok.SneakyThrows;
+import lombok.experimental.UtilityClass;
+
+@UtilityClass
 public class ConnectionManager {
 
     private static final String URL_KEY = "db.url";
@@ -12,10 +15,6 @@ public class ConnectionManager {
 
     static {
         loadDriver();
-    }
-
-    private ConnectionManager() {
-
     }
 
     private static void loadDriver() {
@@ -27,16 +26,13 @@ public class ConnectionManager {
         }
     }
 
+    @SneakyThrows
     public static Connection get() {
-        try {
             return DriverManager.getConnection(
                 PropertiesUtil.get(URL_KEY),
                 PropertiesUtil.get(USER_KEY),
                 PropertiesUtil.get(PASSWORD_KEY)
                 );
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     

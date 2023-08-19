@@ -15,12 +15,14 @@ public class FlightService {
 
     public List<FlightDto> findAll(){
         return flightDao.findAll().stream()
-                                    .map(x -> new FlightDto(
-                                        x.getId(),
+                                    .map(flight -> FlightDto.builder()
+                                        .id(flight.getId())
+                                        .description(
                                         """
                                             %s - %s - %s
-                                                """.formatted(x.getDepartureAirportCode(), x.getArrivalAirportCode(), x.getStatus())
-                                    )) 
+                                                """.formatted(flight.getDepartureAirportCode(), flight.getArrivalAirportCode(), flight.getStatus()))
+                                        .build()
+                                    )
                                     .toList();
     }
 
