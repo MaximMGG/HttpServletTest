@@ -16,6 +16,8 @@ import com.httpservlet.test.httpservlets.servlet.utils.ConnectionManager;
 
 public class FlightDao implements Dao<Long, Flight> {
 
+    private static final FlightDao INSTANSE = new FlightDao();
+
     private static final String FIND_ALL = """
             SELECT *
             FROM flight
@@ -35,6 +37,8 @@ public class FlightDao implements Dao<Long, Flight> {
         }
         return null;
     }
+
+    private FlightDao() {}
 
     private Flight buildFlight(ResultSet res) throws SQLException {
         return new Flight(
@@ -73,5 +77,8 @@ public class FlightDao implements Dao<Long, Flight> {
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 
+    public static FlightDao getIstance() {
+        return INSTANSE;
+    }
     
 }
