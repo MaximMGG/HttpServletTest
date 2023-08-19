@@ -4,10 +4,15 @@ C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\te
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\PropertiesUtil.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\dao\Dao.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\entity\Ticket.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\entity\Flight.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\Web.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\dao\TicketDao.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\TicketServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\entity\FlightStatus.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\FlightServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\dao\FlightDao.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\dto\TicketDto.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\FirstServlet.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\service\TicketService.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\dto\FlightDto.java

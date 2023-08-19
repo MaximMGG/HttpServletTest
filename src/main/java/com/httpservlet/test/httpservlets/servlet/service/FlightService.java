@@ -20,7 +20,6 @@ public class FlightService {
                                         """
                                             %s - %s - %s
                                                 """.formatted(x.getDepartureAirportCode(), x.getArrivalAirportCode(), x.getStatus())
-
                                     )) 
                                     .toList();
     }

@@ -42,7 +42,7 @@ public class FlightServlet extends HttpServlet{
             dto.forEach(flightDto -> {
                 writer.write("""
                         <li>
-                            <a href="/tickets?flightId=%d">%s</a>
+                            <a href="/httpservlets-1.0-SNAPSHOT/tickets?flightId=%d">%s</a>
                         </li>
                         """.formatted(flightDto.getId(), flightDto.getDescription()));
             });
