@@ -48,7 +48,7 @@ public class FlightDao implements Dao<Long, Flight> {
             res.getObject("departure_airport_code", String.class),
             res.getObject("arrival_date", Timestamp.class).toLocalDateTime(),
             res.getObject("arrival_airport_code", String.class),
-            res.getObject("aircraft_id", Long.class),
+            res.getObject("aircraft_id", Integer.class),
             FlightStatus.valueOf(res.getObject("status", String.class))
         );
     }

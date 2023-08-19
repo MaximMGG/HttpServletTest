@@ -3,7 +3,9 @@ package com.httpservlet.test.httpservlets.servlet.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
+import com.httpservlet.test.httpservlets.servlet.dto.FlightDto;
 import com.httpservlet.test.httpservlets.servlet.service.FlightService;
 
 import jakarta.servlet.ServletConfig;
@@ -36,7 +38,8 @@ public class FlightServlet extends HttpServlet{
         try (PrintWriter writer = resp.getWriter()) {
             writer.write("<h1>Flights List:</h1>");
             writer.write("<ul>");
-            flightService.findAll().forEach(flightDto -> {
+            List<FlightDto> dto = flightService.findAll();
+            dto.forEach(flightDto -> {
                 writer.write("""
                         <li>
                             <a href="/tickets?flightId=%d">%s</a>
