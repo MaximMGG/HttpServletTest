@@ -17,14 +17,14 @@ public class TicketService {
 
     private TicketService() {}
 
-    public List<TicketDto> findAllByFlightId(Long flightId){ 
+    public List<TicketDto> findAllByFlightId(Long flightId){
         return ticketDao.findAllByFlightId(flightId).stream()
-                                    .map(ticket -> new TicketDto(
-                                        ticket.getId(),
-                                        ticket.getFightId(),
-                                        ticket.getSeatNo()
-                                    ))
-                                    .toList();
+                                            .map(ticket -> TicketDto.builder()
+                                                            .id(ticket.getId())
+                                                            .flightId(ticket.getFightId())
+                                                            .seatNo(ticket.getSeatNo())
+                                                            .build())
+                                            .toList();
 
     }
 }
