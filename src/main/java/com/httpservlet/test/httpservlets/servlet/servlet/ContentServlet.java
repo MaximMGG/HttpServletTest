@@ -28,7 +28,7 @@ public class ContentServlet extends HttpServlet {
         req.getSession().setAttribute("flightsMap", flightDtos.stream()
                             .collect(Collectors.toMap(FlightDto::getId, FlightDto::getDescription)));
 
-        req.getRequestDispatcher(JspHelper.getPath("content")).forward(req, resp);
+        req.getRequestDispatcher(JspHelper.getPath("tickets")).forward(req, resp);
 
     }
 

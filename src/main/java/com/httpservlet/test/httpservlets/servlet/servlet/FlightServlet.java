@@ -1,12 +1,9 @@
 package com.httpservlet.test.httpservlets.servlet.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
 
-import com.httpservlet.test.httpservlets.servlet.dto.FlightDto;
 import com.httpservlet.test.httpservlets.servlet.service.FlightService;
+import com.httpservlet.test.httpservlets.servlet.utils.JspHelper;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
@@ -32,22 +29,9 @@ public class FlightServlet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        req.setAttribute("flights", flightService.findAll());
 
-        try (PrintWriter writer = resp.getWriter()) {
-            writer.write("<h1>Flights List:</h1>");
-            writer.write("<ul>");
-            List<FlightDto> dto = flightService.findAll();
-            dto.forEach(flightDto -> {
-                writer.write("""
-                        <li>
-                            <a href="/httpservlets-1.0-SNAPSHOT/tickets?flightId=%d">%s</a>
-                        </li>
-                        """.formatted(flightDto.getId(), flightDto.getDescription()));
-            });
-            writer.write("</ul>");
-        }
+        req.getRequestDispatcher(JspHelper.getPath("flights")).forward(req, resp);
     }
     
 

@@ -2,6 +2,7 @@ com\httpservlet\test\httpservlets\servlet\FirstServlet.class
 com\httpservlet\test\httpservlets\servlet\utils\PropertiesUtil.class
 com\httpservlet\test\httpservlets\servlet\Run.class
 com\httpservlet\test\httpservlets\servlet\entity\FlightStatus.class
+com\httpservlet\test\httpservlets\servlet\servlet\RegistrationServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\UserDto.class
 com\httpservlet\test\httpservlets\servlet\entity\Ticket.class
 com\httpservlet\test\httpservlets\servlet\dto\UserDto$UserDtoBuilder.class

@@ -1,10 +1,9 @@
 package com.httpservlet.test.httpservlets.servlet.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
 
 import com.httpservlet.test.httpservlets.servlet.service.TicketService;
+import com.httpservlet.test.httpservlets.servlet.utils.JspHelper;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -20,22 +19,8 @@ public class TicketServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long flightId = Long.valueOf(req.getParameter("flightId"));
-
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
-
-        try (PrintWriter pw = resp.getWriter()) {
-            pw.write("<h1>bought tickets</h1>");
-            pw.write("<ul>");
-            ticketService.findAllByFlightId(flightId).forEach(ticketDto ->
-            pw.write("""
-                   <li>
-                        %s
-                   </li>
-                    """.formatted(ticketDto.getSeatNo())));
-            pw.write("</ul>");
-
-        }
+        req.setAttribute("tickets", ticketService.findAllByFlightId(flightId));
+        req.getRequestDispatcher(JspHelper.getPath("tickets")).forward(req, resp);;
     }
 
 }
