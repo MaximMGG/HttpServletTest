@@ -11,6 +11,7 @@ com\httpservlet\test\httpservlets\servlet\utils\dao\FlightDao.class
 com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.class
 com\httpservlet\test\httpservlets\servlet\servlet\CookieServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\TicketDto.class
+com\httpservlet\test\httpservlets\servlet\utils\JspHelper.class
 com\httpservlet\test\httpservlets\servlet\servlet\Web.class
 com\httpservlet\test\httpservlets\servlet\utils\dao\Dao.class
 com\httpservlet\test\httpservlets\servlet\dto\FlightDto.class
@@ -19,6 +20,7 @@ com\httpservlet\test\httpservlets\servlet\dto\TicketDto$TicketDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.class
 com\httpservlet\test\httpservlets\servlet\utils\dao\TicketDao.class
 com\httpservlet\test\httpservlets\servlet\DownloadServlet.class
+com\httpservlet\test\httpservlets\servlet\servlet\ContentServlet.class
 com\httpservlet\test\httpservlets\servlet\service\FlightService.class
 com\httpservlet\test\httpservlets\servlet\servlet\TicketServlet.class
 com\httpservlet\test\httpservlets\servlet\service\TicketService.class

@@ -4,12 +4,14 @@ C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\te
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\SessionServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\CookieServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\dto\UserDto.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\ContentServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\PropertiesUtil.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\dao\Dao.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\entity\Ticket.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\entity\Flight.java
+C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\JspHelper.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\Web.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\utils\dao\TicketDao.java
 C:\Users\123\Desktop\JAVA projects\httpservlets\src\main\java\com\httpservlet\test\httpservlets\servlet\servlet\TicketServlet.java
