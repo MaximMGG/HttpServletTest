@@ -8,6 +8,7 @@ com\httpservlet\test\httpservlets\servlet\dto\UserDto$UserDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\servlet\SessionServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\FlightDto$FlightDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\utils\dao\FlightDao.class
+com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.class
 com\httpservlet\test\httpservlets\servlet\servlet\CookieServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\TicketDto.class
 com\httpservlet\test\httpservlets\servlet\servlet\Web.class
