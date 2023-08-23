@@ -1,5 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
     <head>
@@ -19,6 +20,15 @@
             <label for="password">Password:
                 <input type="password" name="password" id="password">
             </label><br>
+            <select name="role" id="role">
+                <c:forEach var="role" items="${requestScope.roles}">
+                    <option value="${role}">${role}</option>
+                </c:forEach>
+            </select><br>
+            <c:forEach var="gender" items="${requestScope.genders}">
+                <input type="radio" name="gender" value="${gender}"> ${gender}
+                <br>
+            </c:forEach>
             <button type="submit">Send</button>
         </form>
     </body>
