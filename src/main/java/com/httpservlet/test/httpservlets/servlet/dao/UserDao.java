@@ -19,8 +19,8 @@ public class UserDao implements Dao<Integer, User> {
 
     private UserDao(){}
 
-    private static final String SAVE_SQL = "INSERT INTO users(name, birthday, email, password, role, gender) values" + 
-                                "(?, ?, ?, ?, ?, ?)";
+    private static final String SAVE_SQL = "INSERT INTO users(name, birthday, email, password, role, gender, image) values" + 
+                                "(?, ?, ?, ?, ?, ?, ?)";
 
     public static UserDao getInstance() {
         return INSTANCE;
@@ -55,6 +55,7 @@ public class UserDao implements Dao<Integer, User> {
             prStatement.setObject(4, entity.getPassword());
             prStatement.setObject(5, entity.getRole().name());
             prStatement.setObject(6, entity.getGender().name());
+            prStatement.setObject(7, entity.getImage());
 
             prStatement.executeUpdate();
 
