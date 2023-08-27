@@ -20,6 +20,7 @@ com\httpservlet\test\httpservlets\servlet\servlet\TicketServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\CreateUserDto$CreateUserDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\exception\ValidationException.class
 com\httpservlet\test\httpservlets\servlet\service\ImageService.class
+com\httpservlet\test\httpservlets\servlet\filter\CharsetFilter.class
 com\httpservlet\test\httpservlets\servlet\FirstServlet.class
 com\httpservlet\test\httpservlets\servlet\utils\PropertiesUtil.class
 com\httpservlet\test\httpservlets\servlet\entity\Gender.class

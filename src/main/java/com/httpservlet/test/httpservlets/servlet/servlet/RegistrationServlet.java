@@ -17,13 +17,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 
 @MultipartConfig(fileSizeThreshold = 1024 * 1024)
-@WebServlet("/registration")
+@WebServlet(value = "/registration", name = "RegistrationServlet")
 public class RegistrationServlet extends HttpServlet {
 
     private final UserService userService = UserService.getInstance();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if(true) {
+            throw new RuntimeException();
+        }
         Part image = req.getPart("image");
 
         CreateUserDto userDto = CreateUserDto.builder()
