@@ -7,7 +7,9 @@
         <title>Title</title>
     </head>
     <body>
-        <form action="/httpservlets-1.0-SNAPSHOT/registration" method="post" enctype="multipart/form-data">
+        <img src="${pageContext.request.contextPath}/images/users/image.jpg" alt="User image">
+
+        <form action="${pageContext.request.contextPath}/registration" method="post" enctype="multipart/form-data">
             <label for="name">Name:
                 <input type="text" name="name" id="name">
             </label><br>

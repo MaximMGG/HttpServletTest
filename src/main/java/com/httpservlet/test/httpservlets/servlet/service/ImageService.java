@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.Optional;
 
 import com.httpservlet.test.httpservlets.servlet.utils.PropertiesUtil;
 
@@ -29,4 +30,13 @@ public class ImageService {
             Files.write(imageFullPath, imageContent.readAllBytes(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
         }
     }
+
+    @SneakyThrows
+    public Optional<InputStream> get(String imagePath) {
+        Path imageFullPath = Path.of(basePath, imagePath);
+        return Files.exists(imageFullPath)
+                            ? Optional.ofNullable(Files.newInputStream(imageFullPath))
+                            : Optional.empty();
+    }
 }
+

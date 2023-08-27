@@ -41,6 +41,7 @@ com\httpservlet\test\httpservlets\servlet\entity\User.class
 com\httpservlet\test\httpservlets\servlet\utils\LocalDateFormatter.class
 com\httpservlet\test\httpservlets\servlet\utils\dao\TicketDao.class
 com\httpservlet\test\httpservlets\servlet\DownloadServlet.class
+com\httpservlet\test\httpservlets\servlet\servlet\ImageServet.class
 com\httpservlet\test\httpservlets\servlet\service\UserService.class
 com\httpservlet\test\httpservlets\servlet\service\TicketService.class
 com\httpservlet\test\httpservlets\servlet\entity\Flight.class

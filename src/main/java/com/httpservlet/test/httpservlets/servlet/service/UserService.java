@@ -12,7 +12,6 @@ import lombok.SneakyThrows;
 
 public class UserService {
     
-    private static final String IMAGE_FOLDER = "/users/";
     private static final UserService INSTANCE = new UserService();
 
     private final CreateUserValidator createUserValidator = CreateUserValidator.getInstance();
