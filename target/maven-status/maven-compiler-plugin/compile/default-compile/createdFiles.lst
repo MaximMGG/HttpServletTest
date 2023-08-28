@@ -1,4 +1,5 @@
 com\httpservlet\test\httpservlets\servlet\dao\UserDao.class
+com\httpservlet\test\httpservlets\servlet\filter\LoggingFilter.class
 com\httpservlet\test\httpservlets\servlet\validator\ValidationResult.class
 com\httpservlet\test\httpservlets\servlet\dao\Dao.class
 com\httpservlet\test\httpservlets\servlet\entity\FlightStatus.class
@@ -15,6 +16,7 @@ com\httpservlet\test\httpservlets\servlet\validator\Validator.class
 com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.class
 com\httpservlet\test\httpservlets\servlet\servlet\ContentServlet.class
 com\httpservlet\test\httpservlets\servlet\service\FlightService.class
+com\httpservlet\test\httpservlets\servlet\filter\UnsafeFilter.class
 com\httpservlet\test\httpservlets\servlet\mapper\Mapper.class
 com\httpservlet\test\httpservlets\servlet\servlet\TicketServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\CreateUserDto$CreateUserDtoBuilder.class

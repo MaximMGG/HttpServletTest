@@ -13,9 +13,11 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.annotation.WebInitParam;
 
-@WebFilter(value = "/*", servletNames = {
-        "RegistrationServlet"
-}, initParams = {
+@WebFilter(value = "/*", 
+// servletNames = {
+//         "RegistrationServlet"
+// }, 
+initParams = {
         @WebInitParam(name = "param1", value = "paramValue")
 }, dispatcherTypes = DispatcherType.REQUEST)
 public class CharsetFilter implements Filter {
