@@ -7,8 +7,7 @@
         <title>Login</title>
     </head>
     <body>
-        <fmt:setLoacale value="ru_RU"/>
-        <fmt:setBundle basename="translations" />
+        <%@ include file="header.jsp" %>
         <form action="${pageContext.request.contextPath}/login" method ="post">
             <lable for="email"><fmt:message key="page.login.email" />
                 <input type="text" name="email" id="email" value="${param.email}" required>

@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebFilter("/*")
 public class AuthorizationFilter implements Filter {
 
-    private static final Set<String> PUBLIC_PATH = Set.of(UrlPath.LOGIN, UrlPath.IMAGES, UrlPath.REGISTRATION);
+    private static final Set<String> PUBLIC_PATH = Set.of(UrlPath.LOGIN, UrlPath.IMAGES, UrlPath.REGISTRATION, UrlPath.LOCALE);
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {

@@ -9,6 +9,7 @@ com\httpservlet\test\httpservlets\servlet\dto\UserDto.class
 com\httpservlet\test\httpservlets\servlet\validator\CreateUserValidator.class
 com\httpservlet\test\httpservlets\servlet\dto\UserDto$UserDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\entity\Role.class
+com\httpservlet\test\httpservlets\servlet\servlet\LocaleServlet.class
 com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.class
 com\httpservlet\test\httpservlets\servlet\utils\UrlPath.class
 com\httpservlet\test\httpservlets\servlet\utils\JspHelper.class
