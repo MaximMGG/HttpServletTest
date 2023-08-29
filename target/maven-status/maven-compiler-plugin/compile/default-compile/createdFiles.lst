@@ -1,4 +1,5 @@
 com\httpservlet\test\httpservlets\servlet\dao\UserDao.class
+com\httpservlet\test\httpservlets\servlet\servlet\LogoutServlet.class
 com\httpservlet\test\httpservlets\servlet\filter\LoggingFilter.class
 com\httpservlet\test\httpservlets\servlet\validator\ValidationResult.class
 com\httpservlet\test\httpservlets\servlet\dao\Dao.class
@@ -9,8 +10,10 @@ com\httpservlet\test\httpservlets\servlet\validator\CreateUserValidator.class
 com\httpservlet\test\httpservlets\servlet\dto\UserDto$UserDtoBuilder.class
 com\httpservlet\test\httpservlets\servlet\entity\Role.class
 com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.class
+com\httpservlet\test\httpservlets\servlet\utils\UrlPath.class
 com\httpservlet\test\httpservlets\servlet\utils\JspHelper.class
 com\httpservlet\test\httpservlets\servlet\servlet\Web.class
+com\httpservlet\test\httpservlets\servlet\locale\LocaleRunner.class
 com\httpservlet\test\httpservlets\servlet\servlet\LoginServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\FlightDto.class
 com\httpservlet\test\httpservlets\servlet\validator\Validator.class
@@ -47,6 +50,7 @@ com\httpservlet\test\httpservlets\servlet\utils\LocalDateFormatter.class
 com\httpservlet\test\httpservlets\servlet\utils\dao\TicketDao.class
 com\httpservlet\test\httpservlets\servlet\DownloadServlet.class
 com\httpservlet\test\httpservlets\servlet\servlet\ImageServet.class
+com\httpservlet\test\httpservlets\servlet\filter\AuthorizationFilter.class
 com\httpservlet\test\httpservlets\servlet\service\UserService.class
 com\httpservlet\test\httpservlets\servlet\service\TicketService.class
 com\httpservlet\test\httpservlets\servlet\entity\Flight.class
