@@ -1,5 +1,14 @@
 package com.httpservlet.test.httpservlets.servlet.entity;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 public enum Role {
-    USER, ADMIN
+    USER, ADMIN;
+
+    public static Optional<Role> find(String role) {
+        return Arrays.stream(values())
+                    .filter(it -> it.name().equals(role))
+                    .findFirst();
+    }
 }

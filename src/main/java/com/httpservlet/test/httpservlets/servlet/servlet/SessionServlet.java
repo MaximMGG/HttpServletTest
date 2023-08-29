@@ -22,7 +22,7 @@ public class SessionServlet extends HttpServlet {
         Object user = (UserDto) session.getAttribute(USER);
         if (user == null) {
             user = UserDto.builder()
-                            .id(100L)
+                            .id(100)
                             .name("Petr@gmail.com")
                             .build();
             session.setAttribute(USER, user);

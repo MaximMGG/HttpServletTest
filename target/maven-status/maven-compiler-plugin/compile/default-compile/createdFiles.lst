@@ -11,9 +11,11 @@ com\httpservlet\test\httpservlets\servlet\entity\Role.class
 com\httpservlet\test\httpservlets\servlet\servlet\DispatcherServlet.class
 com\httpservlet\test\httpservlets\servlet\utils\JspHelper.class
 com\httpservlet\test\httpservlets\servlet\servlet\Web.class
+com\httpservlet\test\httpservlets\servlet\servlet\LoginServlet.class
 com\httpservlet\test\httpservlets\servlet\dto\FlightDto.class
 com\httpservlet\test\httpservlets\servlet\validator\Validator.class
 com\httpservlet\test\httpservlets\servlet\utils\ConnectionManager.class
+com\httpservlet\test\httpservlets\servlet\mapper\UserMapper.class
 com\httpservlet\test\httpservlets\servlet\servlet\ContentServlet.class
 com\httpservlet\test\httpservlets\servlet\service\FlightService.class
 com\httpservlet\test\httpservlets\servlet\filter\UnsafeFilter.class

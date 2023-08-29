@@ -1,10 +1,14 @@
 package com.httpservlet.test.httpservlets.servlet.service;
 
+import java.util.Optional;
+
 import com.httpservlet.test.httpservlets.servlet.dao.UserDao;
 import com.httpservlet.test.httpservlets.servlet.dto.CreateUserDto;
+import com.httpservlet.test.httpservlets.servlet.dto.UserDto;
 import com.httpservlet.test.httpservlets.servlet.entity.User;
 import com.httpservlet.test.httpservlets.servlet.exception.ValidationException;
 import com.httpservlet.test.httpservlets.servlet.mapper.CreateUserMapper;
+import com.httpservlet.test.httpservlets.servlet.mapper.UserMapper;
 import com.httpservlet.test.httpservlets.servlet.validator.CreateUserValidator;
 import com.httpservlet.test.httpservlets.servlet.validator.ValidationResult;
 
@@ -18,6 +22,13 @@ public class UserService {
     private final UserDao userDao = UserDao.getInstance();
     private final CreateUserMapper createUserMapper = CreateUserMapper.getInstane();
     private final ImageService imageService = ImageService.getInstance();
+    private final UserMapper userMapper = UserMapper.getInstance();
+
+    @SneakyThrows
+    public Optional<UserDto> login(String email, String password) {
+        return UserDao.findByEmaillAndPassword(email, password)
+        .map(userMapper::mapFrom);
+    }
 
     @SneakyThrows
     public Integer create(CreateUserDto userDto) {
